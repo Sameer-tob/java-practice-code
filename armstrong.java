@@ -6,7 +6,7 @@ public class armstrong {
         System.out.println("Enter the no ");
         int no=scn.nextInt();
         
-        int dupno=no;
+        int dupno=no;    //store duplicate value of no
         
         long length=0;
         while(dupno!=0){
@@ -15,8 +15,7 @@ public class armstrong {
           
         }
         
-        int dupno2=no;
-        System.out.println(dupno2);
+        int dupno2=no;  //store duplicate value of no
         int arm=0;
         while(dupno2!=0){
             int power=1;
@@ -29,10 +28,10 @@ public class armstrong {
         }
 
         if(arm==no){
-            System.out.println(arm + " : Armstrong NO");
+            System.out.println(arm + " = " + no + " : Armstrong NO");
         }
         else{
-            System.out.println(arm + " : Not Amstrong");
+            System.out.println(arm + " != " + no + " : Not Amstrong");
         }
 
     }
