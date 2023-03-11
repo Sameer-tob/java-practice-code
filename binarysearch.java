@@ -25,7 +25,7 @@ public class binarysearch {
         int high=arr.length-1;
         int mid;
        
-        //searching Algorithm
+        //searching Algorithm 
         while(low<=high){
             mid=low +(high-low)/2;
             if(arr[mid]==item){
