@@ -11,8 +11,8 @@ public class armstrong {
         long length=0;
         while(dupno!=0){
             dupno=dupno/10;
-            length++;
-            
+            length++;    //length of the no
+          
         }
         
         int dupno2=no;
