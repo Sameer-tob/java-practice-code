@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class mergeSort{
-    static void split(int a[],int n){
+    static void divide(int a[],int n){
 	    
 		//recursive Base condition
 		if(n<2)    
@@ -19,13 +19,13 @@ class mergeSort{
 		    c[i]=a[i+m1];          
 	    }
 
-	    split(b,m1);
-	    split(c,m2);
-	    sum(a,b,c,m1,m2);	
+	    divide(b,m1);
+	    divide(c,m2);
+	    merge(a,b,c,m1,m2);	
     }
 
 
-    static void sum(int a[],int b[],int c[],int m1,int m2){
+    static void merge(int a[],int b[],int c[],int m1,int m2){
 	    int i,j,k;
 	  
 		for(i=0,j=0,k=0;i<m1 && j<m2;){   
@@ -61,8 +61,9 @@ class mergeSort{
 		for(int i=0;i<n;i++){
 			System.out.print(a[i] + " ");
 		}
-	   
-	    split(a,n);
+	    
+		// Divide the Array untill single element left 
+	    divide(a,n);
 	 
 	    //print the Array After Sorting
 		System.out.print("\nSorted Array : ");
