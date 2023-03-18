@@ -5,26 +5,21 @@ public class armstrong {
         Scanner scn=new Scanner(System.in);
         System.out.println("Enter the no ");
         int no=scn.nextInt();
-        
-        int dupno=no;    //store duplicate value of no
-        
-        long length=0;
-        while(dupno!=0){
-            dupno=dupno/10;
-            length++;    //length of the no
-          
-        }
-        
-        int dupno2=no;  //store duplicate value of no
+    
+        String str=Integer.toString(no);
+        int length=str.length();
+
+
+        int temp=no;  //store duplicate value of no
         int arm=0;
-        while(dupno2!=0){
+        while(temp!=0){
             int power=1;
-            int rem=dupno2 % 10;
+            int rem=temp % 10;
             for(int i=1;i<=length;i++){
                 power=power * rem;
             }
-            arm=arm+power;
-            dupno2=dupno2/10;
+            arm+=power;
+            temp/=10;
         }
 
         if(arm==no){

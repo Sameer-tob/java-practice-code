@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class insertionsort{
     public static void main(String[] args) {
@@ -19,22 +19,20 @@ public class insertionsort{
             System.out.print(arr[i] + " ");
         }
 
-        System.out.println();
 
         //Insertion Sort Algorithm
-        int j,v;
         for(int i=0;i<n;i++){
-            v=arr[i];
-            j=i;
-            while(j>0 && arr[j-1]>v){
-               arr[j]=arr[j-1];
-               j--;
-            }
-            arr[j]=v;   
+            int j=i;
+            while(j>0 && arr[j-1]>arr[j]){
+                int temp =arr[j-1];
+                arr[j-1]=arr[j];
+                arr[j]=temp;
+                j--;
+            }   
         }
 
         //Sorted Array Display
-        System.out.print("Sorted Array  :  ");
+        System.out.print("\nSorted Array  :  ");
         for(int i=0;i<n;i++){
             System.out.print(arr[i] + " ");
         }      

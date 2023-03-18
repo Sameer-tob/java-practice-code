@@ -8,7 +8,7 @@ public class factorial {
 
         System.out.println(fac(n));
     }
-    public static  int  fac(int n){
+    static  long  fac(int n){
        if(n==0 || n==1)
        return 1;
 
