@@ -1,6 +1,9 @@
+import java.time.*;
 import java.util.Scanner;
 
 class mergeSort{
+
+	//divide the array till single element
     static void divide(int a[],int n){
 	    
 		//recursive Base condition
@@ -25,6 +28,7 @@ class mergeSort{
     }
 
 
+	// Merge the breaked array in sorted order
     static void merge(int a[],int b[],int c[],int m1,int m2){
 	    int i,j,k;
 	  
@@ -42,7 +46,11 @@ class mergeSort{
 
 
     public static void main(String[] args){
-	   Scanner scn=new Scanner(System.in);
+
+	  
+		Instant start=Instant.now();
+
+	    Scanner scn=new Scanner(System.in);
 	   
 	    //No of Element to Add in the Array
 	    System.out.println("Enter the no of Element you want in Array ");
@@ -70,5 +78,9 @@ class mergeSort{
 	    for(int i=0;i<n;i++) {
 		    System.out.print(a[i] + " ");   //printing sorted array
     	}
+
+		Instant end=Instant.now();
+        Duration timeElapsed = Duration.between(start, end);
+        System.out.println("\nTotal time taken to execute this code : " + timeElapsed.toMillis() + " milliseconds");
     }
 }

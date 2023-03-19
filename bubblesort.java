@@ -1,8 +1,13 @@
+import java.time.Duration;
+import java.time.Instant;
 import java.util.Scanner;
 
 public class bubblesort {
     public static void main(String[] args) {
        
+        Instant start = Instant.now();
+        // Your code here
+
         Scanner scn=new Scanner(System.in);
         System.out.println("Enter the no of Element want to add in Array");
         int n=scn.nextInt();
@@ -38,5 +43,10 @@ public class bubblesort {
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i] + " ");
         }
+
+        Instant end = Instant.now();
+        Duration timeElapsed = Duration.between(start, end);
+        System.out.println("\nTotal time taken to execute this code : " + timeElapsed.toMillis() + " milliseconds");
+
     }
 }
