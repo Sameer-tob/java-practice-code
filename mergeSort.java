@@ -76,11 +76,12 @@ class mergeSort{
 	    //print the Array After Sorting
 		System.out.print("\nSorted Array : ");
 	    for(int i=0;i<n;i++) {
-		    System.out.print(a[i] + " ");   //printing sorted array
+		    System.out.print(a[i] + " ");   
     	}
 
+		//get the total time taken to execute the code
 		Instant end=Instant.now();
         Duration timeElapsed = Duration.between(start, end);
-        System.out.println("\nTotal time taken to execute this code : " + timeElapsed.toMillis() + " milliseconds");
+        System.out.println("\nTotal time taken to execute this code : " + timeElapsed.toSeconds() + " milliseconds");
     }
 }
