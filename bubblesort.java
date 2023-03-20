@@ -38,7 +38,7 @@ public class bubblesort {
             }
         }
 
-        //Sorted Array
+        //print Sorted Array
         System.out.println("\nSorted Array : ");
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i] + " ");
