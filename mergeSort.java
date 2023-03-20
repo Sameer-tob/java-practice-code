@@ -1,5 +1,5 @@
 import java.time.*;
-import java.util.Scanner;
+import java.util.*;
 
 class mergeSort{
 
@@ -30,18 +30,25 @@ class mergeSort{
 
 	// Merge the breaked array in sorted order
     static void merge(int a[],int b[],int c[],int m1,int m2){
+
 	    int i,j,k;
 	  
 		for(i=0,j=0,k=0;i<m1 && j<m2;){   
-		if(b[i]<c[j])
-			a[k++]=b[i++];     // adding lesser values to sorted array
-		else
-			a[k++]=c[j++];     // adding lesser values to sorted array
+		    
+			if(b[i]<c[j])
+			a[k++]=b[i++]; // adding lesser values to sorted array
+	
+		    else
+			a[k++]=c[j++];   // adding lesser values to sorted array  
 	    }
 	    
-		while(i<m1)a[k++]=b[i++];
-	    while(j<m2)a[k++]=c[j++];	
-    
+		while(i<m1)
+	    a[k++]=b[i++];		
+
+	    while(j<m2)
+	    a[k++]=c[j++];
+		
+
 	}
 
 
@@ -70,11 +77,11 @@ class mergeSort{
 			System.out.print(a[i] + " ");
 		}
 	    
-		// Divide the Array untill single element left 
+		//invoking fn. Divide the Array untill single element left 
 	    divide(a,n);
 	 
 	    //print the Array After Sorting
-		System.out.print("\nSorted Array : ");
+		System.out.print("\nSorted  Array : ");
 	    for(int i=0;i<n;i++) {
 		    System.out.print(a[i] + " ");   
     	}
