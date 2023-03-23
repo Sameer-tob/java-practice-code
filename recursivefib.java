@@ -2,12 +2,13 @@ import java.util.Scanner;
 
 public class recursivefib {
     public static void main(String[] args) {
-        Scanner scn=new Scanner(System.in);
-        System.out.println("Enter the no ");
-        int n=scn.nextInt();
+        try (Scanner scn = new Scanner(System.in)) {
+            System.out.println("Enter the no ");
+            int n=scn.nextInt();
 
-        for(int i=0;i<n;i++){
-            System.out.print(fib(i) + " ");
+            for(int i=0;i<n;i++){
+                System.out.print(fib(i) + " ");
+            }
         }
     }
 

@@ -2,11 +2,12 @@ import java.util.Scanner;
 
 public class recursion3 {
     public static void main(String[] args) {
-        Scanner scn=new Scanner(System.in);
-        System.out.println("Enter the no");
-        int n=scn.nextInt();
+        try (Scanner scn = new Scanner(System.in)) {
+            System.out.println("Enter the no");
+            int n=scn.nextInt();
 
-        printNo(n);
+            printNo(n);
+        }
     }
     static void printNo(int n){
         if(n==0)
