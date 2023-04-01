@@ -1,9 +1,9 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Scanner;
+import java.util.*;
+import java.time.*;
 
 public class leaderInArray {
     public static void main(String[] args) {
+        Instant start=Instant.now();
         Scanner scn=new Scanner(System.in);
         
         System.out.println("Size of Array");
@@ -31,5 +31,8 @@ public class leaderInArray {
         }
        // Collections.reverse(list);
         System.out.println("\nLeaders in an Array: " + list);
+        Instant end=Instant.now();
+		Duration timeElapsed=Duration.between(start, end);
+		System.out.println("\nTotal time taken to complete execution of code " + timeElapsed.toMillis() + "milo second");
     }
 }
