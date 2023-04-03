@@ -15,11 +15,12 @@ public class transposeMatrix {
             }
         }
 
-        System.out.print("\nEntered matrix : ");
+        System.out.println("Entered matrix : ");
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                System.out.print(matrix[i][j] + " ");
             }
+            System.out.println();
         }
 
         //Transpose Logic
@@ -32,11 +33,12 @@ public class transposeMatrix {
             }
         }
 
-        System.out.print("\nTransposed matrix : ");
+        System.out.println("Transposed matrix : ");
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                System.out.print(matrix[i][j] + " ");
             }
+            System.out.println();
         }
     }
 }
