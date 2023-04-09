@@ -2,7 +2,7 @@ import java.util.*;
 public class quicksort{
     public static void main(String[] args) {
         try (Scanner scn = new Scanner(System.in)) {
-            System.out.println("Enetr the no of Element to add in array");
+            System.out.println("Enteer the Size of array");
             int n=scn.nextInt();
 
             int arr[]=new int[n];
