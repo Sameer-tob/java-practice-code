@@ -8,20 +8,19 @@ public class selectionsort {
         Instant start=Instant.now();
 
         try (Scanner scn = new Scanner(System.in)) {
-            System.out.println("Enter the no of Element want to add in Array");
+            System.out.println("Enter the Size of an Array");
             int n=scn.nextInt();
 
-            //User input to add element in array
-            
+            //User input to add element in array            
             int arr[]=new int[n];
-            System.out.println("Enter the Array Element");
+            System.out.println("Add Element to the Array");
             for(int i=0;i<n;i++){
                 arr[i]=scn.nextInt();
             }
             
             //output of what you enter in an Order
 
-            System.out.println("Your Inputed Array : ");
+            System.out.print("Entered Array : ");
             for(int i=0;i<n;i++){
                 System.out.print(arr[i] + " ");
             }
@@ -43,7 +42,7 @@ public class selectionsort {
             }
 
             //Sorted Array 
-            System.out.println("\nSorted Array");
+            System.out.print("\nSorted Array : ");
             for(int i=0;i<n;i++){
                 System.out.print(arr[i] +" ");
             }
