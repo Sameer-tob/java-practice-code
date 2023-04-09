@@ -4,7 +4,7 @@ public class binarysearch {
     public static void main(String[] args) {
         try (Scanner scn = new Scanner(System.in)) {
             //length of Array
-            System.out.println("Enter the no of element in Array");
+            System.out.println("Enter the size of Array");
             int n=scn.nextInt();
 
             //Add element to the Array
@@ -16,7 +16,7 @@ public class binarysearch {
 
             
             //Element to be Searched
-            System.out.println("Enter the Element to Search in Array");
+            System.out.println("Enter the Element to be Search in Array");
             int item=scn.nextInt();
 
             int low=0;
