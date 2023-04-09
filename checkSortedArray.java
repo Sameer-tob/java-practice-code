@@ -14,13 +14,12 @@ public class checkSortedArray {
             for(int i=0;i<n;i++){
                 arr[i]=scn.nextInt();
             }
-            boolean ans=new solution().check(arr,n);
-            System.out.println(ans);
+
+            System.out.println(check(arr,n));
         }
     }
-}
-class solution{
-    boolean check(int arr[],int n){
+    
+    static boolean check(int arr[],int n){
         for(int i=1;i<n;i++){
             if(arr[i-1]<arr[i]){
                 
