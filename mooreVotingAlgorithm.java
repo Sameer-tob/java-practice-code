@@ -2,30 +2,30 @@ import java.util.Scanner;
 
 public class mooreVotingAlgorithm {
     public static void main(String[] args) {
-        Scanner scn=new Scanner(System.in);
+        try (Scanner scn = new Scanner(System.in)) {
+            //Size of Array
+            System.out.println("Enter Size of Array");
+            int n=scn.nextInt();
 
-        //Size of Array
-        System.out.println("Enter Size of Array");
-        int n=scn.nextInt();
+            //Add Element to the Array
+            System.out.println("Add Element to the Array");
+            int arr[]=new int[n];
+            for(int i=0;i<n;i++){
+               arr[i]=scn.nextInt();
+            }
 
-        //Add Element to the Array
-        System.out.println("Add Element to the Array");
-        int arr[]=new int[n];
-        for(int i=0;i<n;i++){
-           arr[i]=scn.nextInt();
+            //Display the Entered Array
+            System.out.println("Entered Array");
+            for(int i=0;i<n;i++){
+                System.out.print(arr[i]+ " ");
+            }
+
+            //invoke findMajority function to compute the majority Element
+            findMajority(arr,n);
+
+            //Return the Element that Appear greater than n/2 times
+            System.out.println("\nThe majority element that appear more that >n/2 times is : " + findMajority(arr,n));
         }
-
-        //Display the Entered Array
-        System.out.println("Entered Array");
-        for(int i=0;i<n;i++){
-            System.out.print(arr[i]+ " ");
-        }
-
-        //invoke findMajority function to compute the majority Element
-        findMajority(arr,n);
-
-        //Return the Element that Appear greater than n/2 times
-        System.out.println("\nThe majority element that appear more that >n/2 times is : " + findMajority(arr,n));
     }
 
     public static int findMajority(int arr[],int n){     
