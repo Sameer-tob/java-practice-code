@@ -6,6 +6,7 @@ public class armstrong {
             System.out.println("Enter the no ");
             int no=scn.nextInt();
    
+            // length of that no
             String str=Integer.toString(no);
             int length=str.length();
 
