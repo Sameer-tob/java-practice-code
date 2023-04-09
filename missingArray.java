@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class missingArray {
     public static void main(String[] args) {
         try (Scanner scn = new Scanner(System.in)) {
+            
             System.out.println("Define the Size of Array");
             int n=scn.nextInt();
 
