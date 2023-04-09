@@ -9,10 +9,10 @@ public class bubblesort {
         // Your code here
 
         try (Scanner scn = new Scanner(System.in)) {
-            System.out.println("Enter the no of Element want to add in Array");
+            System.out.println("Enter the Sixe of an Array");
             int n=scn.nextInt();
 
-            System.out.println("Enter the Array Element");
+            System.out.println("Add Element to the Array");
             int arr[]=new int[n];
 
             for(int i=0;i<n;i++){
@@ -20,7 +20,7 @@ public class bubblesort {
             }
              
             //What you input
-            System.out.println("Your inputed Array : ");
+            System.out.println("Entered Array : ");
             for(int i=0;i<n;i++){
                 System.out.print(arr[i] + " ");
             }
