@@ -6,7 +6,7 @@ public class insertionsort{
 
         Instant start=Instant.now();
         try (Scanner scn = new Scanner(System.in)) {
-            System.out.println("Enter the no of element to add in Array");
+            System.out.println("Enter the size of Array");
             int n=scn.nextInt();
 
             int arr[]=new int[n];
@@ -17,7 +17,7 @@ public class insertionsort{
 
 
             //Display what you input
-            System.out.print("Inputed Array :  ");
+            System.out.print("Entered Array :  ");
             for(int i=0;i<n;i++){
                 System.out.print(arr[i] + " ");
             }
