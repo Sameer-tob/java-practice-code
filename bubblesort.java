@@ -9,7 +9,7 @@ public class bubblesort {
         // Your code here
 
         try (Scanner scn = new Scanner(System.in)) {
-            System.out.println("Enter the Sixe of an Array");
+            System.out.println("Enter the Size of an Array");
             int n=scn.nextInt();
 
             System.out.println("Add Element to the Array");
