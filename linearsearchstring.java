@@ -8,7 +8,7 @@ public class linearsearchstring {
             int n=scn.nextInt();
             int temp=0;
 
-            //Add String to the List
+            //Add String to an array
             String arr[]=new String[n];
             System.out.println("Add String to the list");
             for(int i=0;i<arr.length;i++){
