@@ -23,7 +23,7 @@ public class rowMax1s {
             System.out.println();
         }
 
-        System.out.println("The row(0-Based Indexing) which contain maximum 1's : "+rowWithMaximum1s(arr,n,m));
+        System.out.println("Row(0-Based) which contain maximum 1's : "+rowWithMaximum1s(arr,n,m));
 
     }
     static int rowWithMaximum1s(int arr[][],int n,int m){
