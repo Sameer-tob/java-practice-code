@@ -11,6 +11,7 @@ public class countDigit{
             System.out.println("Enter the no");
             long n=scn.nextLong();
 
+            //complete process without collection
             long dup=n;
             int count=0;
             while(n!=0){
