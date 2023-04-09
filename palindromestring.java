@@ -7,12 +7,12 @@ public class palindromestring {
             String s=scn.nextLine();
 
  //1.      
-      String oString="";
-      for(int i=s.length()-1;i>=0;i--){
+        String oString="";
+        for(int i=s.length()-1;i>=0;i--){
             oString=oString+s.charAt(i);
-      }
+        }
       
-//2.    // String oString=s;         
+//2.        // String oString=s;         
             // s=new StringBuilder(s).reverse().toString();
   
             if(s.equals(oString)){
