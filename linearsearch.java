@@ -4,7 +4,7 @@ public class linearsearch {
     public static void main(String[] args) {
         try (Scanner scn = new Scanner(System.in)) {
             //length of Array
-            System.out.println("Enter the Length of Array");
+            System.out.println("Enter size of an Array");
             int n=scn.nextInt();
             int temp=0;
 
