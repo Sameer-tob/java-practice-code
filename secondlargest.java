@@ -32,7 +32,9 @@ public class secondlargest {
                     secondlargest=arr[i];
                 }
             }
+            //gives the first-largest
             System.out.println("\nlargest no        :  " + largest);
+            //gives the second-largest
             System.out.println("Second largest no :  " + secondlargest);
         }
     }
