@@ -6,7 +6,7 @@ public class rotatearray {
             System.out.println("Enter the size of array");
             int n=scn.nextInt();
 
-            System.out.println("add Element to the Array");
+            System.out.println("Add Element to the Array");
             int arr[]=new int[n];
             for(int i=0;i<n;i++){
                 arr[i]=scn.nextInt();
@@ -20,6 +20,7 @@ public class rotatearray {
             System.out.println("\nUpto how much Place you want to Left Rotate an Array");
             int k=scn.nextInt();
 
+            //invoke rotate function
             rotate(arr,n,k);
 
             System.out.print("Rotated Array : ");
@@ -30,6 +31,7 @@ public class rotatearray {
 
     }
 
+    //rotate function
     static void rotate(int arr[] ,int n,int k){
         k=k%n;
         reverse(arr,0,k-1);
@@ -37,6 +39,7 @@ public class rotatearray {
         reverse(arr,0,n-1);
     }
     
+    //reverse function
     static void reverse(int arr[],int start,int end){
         while(start<=end){
             int temp=arr[start];
