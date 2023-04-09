@@ -6,7 +6,7 @@ public class mergeSort{
 		Instant start=Instant.now();
 		try (Scanner scn = new Scanner(System.in)) {
 			//Size of array
-			System.out.println("Enter the no of element want to add in the array");
+			System.out.println("Enter the size of Array");
 			int n=scn.nextInt();
 
 			//Create an array and add element to it
